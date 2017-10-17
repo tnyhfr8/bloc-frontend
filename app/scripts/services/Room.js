@@ -10,6 +10,6 @@
   }
 
   angular
-    .module('projectName')
+    .module('blocChat')
     .factory('Room', ['$firebaseArray', Room]);
 })();

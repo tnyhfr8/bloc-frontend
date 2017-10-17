@@ -1,8 +1,9 @@
 (function() {
     function HomeCtrl(Room) {
+      this.rooms = Room.all;
     }
 
     angular
-        .module('projectName')
-        .controller('HomeCtrl', ['Room', HomeCtrl]);
+        .module('blocChat')
+        .controller('HomeCtrl', ['Room', '$scope', HomeCtrl]);
 })();
