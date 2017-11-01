@@ -1,2 +1,3 @@
-<h1>Home Page</h1>
-<div ng-repeat="room in home.rooms">{{room.$value}} </div>
+<h1>Bloc Chat</h1>
+<button class="btn" ng-click="home.openModal()">New Room</button>
+<div ng-repeat="room in home.rooms">{{ room.name }} </div>
