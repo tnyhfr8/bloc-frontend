@@ -1,0 +1,17 @@
+.sidebar {
+  background-color: grey;
+  height: 100%;
+}
+
+.run {
+  height: 100%;
+}
+
+.sides {
+  height: 100%;
+}
+
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
