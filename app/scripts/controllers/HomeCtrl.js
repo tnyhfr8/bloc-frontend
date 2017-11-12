@@ -30,6 +30,11 @@
         console.log(room);
         this.activeRoom = room.name;
       }
+
+      this.newMessage = function(typedmessage) {
+        Message.send(typedmessage);
+        console.log(typedmessage);
+      }
     }
 
     angular
