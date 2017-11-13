@@ -16,7 +16,7 @@
       list.$add({
           username: $cookies.get('blocChatCurrentUser'),
           content: newMessage,
-          roomId: newMessage.id
+          roomId: 
       });
     };
 
