@@ -11,12 +11,13 @@
         return $firebaseArray(ref.equalTo(roomId));
     };
 
-    Message.send = function(newMessage) {
+    Message.send = function(newMessage, roomId) {
       var list = $firebaseArray(ref);
       list.$add({
           username: $cookies.get('blocChatCurrentUser'),
           content: newMessage,
-          roomId: 
+          roomId: roomId,
+          sentAt: firebase.database.ServerValue.TIMESTAMP
       });
     };
 

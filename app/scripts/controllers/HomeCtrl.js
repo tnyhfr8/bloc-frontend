@@ -2,7 +2,7 @@
     function HomeCtrl(Room, Message, $uibModal) {
       this.rooms = Room.all;
       this.activeRoom;
-      this.roomId;
+
 
 
       this.openModal = function() {
@@ -29,14 +29,15 @@
       this.openMessages = function(room) {
         this.messages = Message.getByRoomId(room.$id);
         console.log(room);
-        this.activeRoom = room.name;
-        this.roomId = room.$id;
+        this.activeRoom = room;
+
       }
 
       this.newMessage = function(typedmessage) {
-        var typedmessage = this.roomId;
-        Message.send(typedmessage);
+
         console.log(typedmessage);
+        Message.send(typedmessage, this.activeRoom.$id);
+
       }
     }
 
