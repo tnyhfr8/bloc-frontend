@@ -1,7 +1,67 @@
-.sidebar {
-  background-color: grey;
-  height: 100%;
+#apptitle {
+  text-align: center;
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 76px;
 }
+
+.form-inline .form-control {
+  width: 967px;
+}
+
+.newroom {
+  margin-bottom: 14px;
+  margin-left: 38%;
+}
+
+.sidebar {
+  background-color: #758AA8;
+  height: 100vh;
+}
+
+.actrooms {
+  height: 100vh;
+  background-color: #D5DCE8;
+  padding: 20px;
+}
+
+.activemessages {
+  font-family: Times;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.bubble {
+    border-radius: 15px;
+    padding: 8px;
+    background-color: white;
+    box-shadow: 5px 5px 5px;
+    opacity: 0.95;
+    overflow-y: auto;
+    height: 92%;
+}
+
+.title {
+  text-align: center;
+  font-family: Verdana;
+  font-weight: bold;
+}
+
+.newmessage {
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  }
+
+.roomlist {
+  font-family: Verdana;
+
+  font-size: 18px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+.roomlist:hover {
+  cursor: pointer;
+  }
 
 .run {
   height: 100%;
@@ -14,8 +74,4 @@
 .container-fluid {
   padding-left: 0px;
   padding-right: 0px;
-}
-
-.form-inline {
-width: 100%;
 }

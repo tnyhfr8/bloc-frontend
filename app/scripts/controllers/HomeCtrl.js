@@ -11,9 +11,13 @@
           controller: function($scope){
 
             $scope.ok = function() {
+              if ($scope.room === undefined) {
+                alert("Room Name Cannot Be Blank");
+              } else {
               console.log($scope.room);
               Room.add($scope.room);
               modalInstance.close();
+            }
             };
 
             $scope.cancel = function() {
@@ -22,6 +26,7 @@
             };
 
           },
+          backdrop: 'static',
           templateUrl: '/templates/modal.html'
         })
       }
@@ -34,7 +39,6 @@
       }
 
       this.newMessage = function(typedmessage) {
-
         console.log(typedmessage);
         Message.send(typedmessage, this.activeRoom.$id);
 
